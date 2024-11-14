@@ -1,0 +1,2311 @@
+<div style="font-size:3em; font-weight:bold; text-align:center; text-shadow:0 0 10px white;">Main Chat 2</div>
+<br />
+<!-- Main Chat Banner -->
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="https://uploads.disquscdn.com/images/d367db80546f5ce1528495d7f7f17760ab07d9857aa8f09881f88997b79916cd.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+    <img border="0" data-original-height="400" data-original-width="640" height="400" src="https://uploads.disquscdn.com/images/d367db80546f5ce1528495d7f7f17760ab07d9857aa8f09881f88997b79916cd.png" width="640" style="border-radius: 12px; box-shadow: 0 0 15px white;"/>
+  </a>
+</div>
+<br />
+<hr />
+<br />
+<div style="font-size:2em; font-weight:bold; text-align:center; text-shadow:0 0 10px white;">Welcome to Citadel! This is our second main chat.</div>
+<br />
+<div style="text-align: center;">Enjoy and respect each other by following these guidelines:</div>
+<br />
+<div style="padding: 10px; border-radius: 12px; text-align: left; background-color: rgba(132,180,204,0.5); box-shadow: 0 0 15px rgb(132,180,204);">
+      <b>1. Be Civil:</b> Use polite language; avoid vulgarity and personal attacks. <br />
+      <b>2. Show Appreciation:</b> Engage with friendliness and acknowledge contributions. <br />
+      <b>3. Be Inclusive:</b> Respect all individuals, regardless of their background. <br />
+      <b>4. Keep Peace:</b> Avoid conflict-prone topics; focus on constructive discussions. <br />
+      <b>5. Embrace Diversity:</b> Respect differing opinions and engage openly. <br />
+      <b>6. Value Members:</b> Treat everyone with respect and empathy. <br />
+      <b>7. Maintain Integrity:</b> Share accurate information and avoid misinformation. <br />
+      <b>8. Have Fun!:</b> Relax, connect, and enjoy the conversations. <br />
+    </div>
+<br />
+<div style="text-align: center;">By participating, you agree to these guidelines. Thank you!</div>
+<br />
+<hr />
+<br />
+<div style="font-size:2em; font-weight:bold; text-align:center; text-shadow:0 0 10px white;">Admin Dept.</div>
+<style>
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 12px;
+    overflow: visible;
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+	box-shadow: 0 0 10px white;
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 12px;
+  }
+
+  .card-front {
+    background-color: #bbb;
+  }
+
+  .card-back {
+    background-color: #2980b9;
+    transform: rotateY(180deg);
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+  }
+
+  .blurred {
+    filter: blur(5px);
+  }
+
+  .clear {
+    filter: none;
+  }
+
+  .text-overlay {
+    position: relative;
+    z-index: 1;
+	text-shadow: 0 0 10px white;
+    color: #ffffff;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      width: 130px;
+      height: 195px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: 100px;
+      height: 150px;
+    }
+
+    .card-container {
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .card-front,
+    .card-back {
+      font-size: 14px;
+    }
+
+    .card img {
+      border-radius: 8px;
+    }
+  }
+</style>
+<div class="element" id="element1">
+  <div class="card-container">
+    <div class="card" id="card1">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/24/52/c1/2452c1f5e96f81384ab40def109a1b84.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Founder</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://i.pinimg.com/originals/f7/c1/11/f7c1112b00eb443646a6b876ec135ddc.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Rashik</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card2">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/c1/2e/19/c12e191aa9bd00045929b50bd932b571.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Admin</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://uploads.disquscdn.com/images/2e67c083b3eeeefe28ccc936f96f8dbb9ad46696c3e5ceae45f0fa633f261da5.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Most Evil</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card14">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/19/af/be/19afbe5b54cb7184ebe3c67fb24063e9.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Admin</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnbqoj0GOPQzBoJAYdY6LSniQ9Nxp-gRhz5eqmzbFyu8bsQSQQLA7RorlaTROfT8NK5qTjN0acKVxR8zieKApDpRW8uEihZxcmg0UrfxqAugSFw2QxiepigWd5f360PYYb_w8PdHcpThfWQqI8do5U4Ss_xqknW_DUro2DSGmZ2dHj844S3gtXOcfCdzH4/s345/output-onlinegiftools.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Nanania</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card14">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/8a/b0/22/8ab0226778418af433d2876d6a3e12c9.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Admin</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://i.pinimg.com/originals/d3/c2/b0/d3c2b0f7d4bf3cccd3b3a58a79914155.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Adi</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card6">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/4c/0f/17/4c0f17d443cdf9f64333b7b26c7cd920.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9qV3i4lT5ynB6JuRNrfDF32h5o5Qnj8Gkh2P99br59kUgcAN8HcoN8VClqDSbtR6F4QFkCul1UwVMouNkWVjAtVae-n4r9oSf0G0hV7vTGh-qiHM8WFaZ4S-kY5XYenRHwLs1vnSJ-lyDohDlOHGDctU9ClXFQ8mMG5W3mBpbzDZnbQbgL43aj_HZSsmi/s375/GintamaGIFofGintokibeinghisusualself-ezgif.com-crop.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Aneemay</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card10">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/ad/89/40/ad89400d468eac9c17fff490c3c7d152.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://uploads.disquscdn.com/images/db1c714ca6023008a50ea0a6d83948639dba401401091841c7efd89ea6f34d84.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Hori</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card16">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/81/0c/d4/810cd4d3fe1b6edb9786ff3feac05f3c.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://uploads.disquscdn.com/images/cbd52ec5ec8b76aba608cb74995abbf8544d52fb8b551bafe5d8ed1613ae10e5.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Helldiver</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card17">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/7c/12/72/7c12727320e9107bd656c581af98067f.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://uploads.disquscdn.com/images/b227bafd8868c6bbc718f2f57eb9b26e3c9c62a0f8102c4d3dddba42fe00df56.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h3>
+            Doughslice
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card19">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/18/65/51/186551df5a3d0a26c1c963c075bca902.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://uploads.disquscdn.com/images/97aa2bb15e0d02ad2bcdf5b19b1da3e50b0c2a52079aea3be665bb4b072f35eb.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Cute Birdy</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card20">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/7e/c0/b0/7ec0b09d255f3db0d9a671250355a3f3.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://uploads.disquscdn.com/images/a80e254b7f255f680811120e3dc7a2626bfc007d08d4fc80fd0d06895f75fcaf.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Ladyhead</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card21">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/84/cb/34/84cb343f56745e2bc29864dfd01849b7.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://i.pinimg.com/originals/e2/a1/1a/e2a11aad5eaafce3fd39c11c43e4b700.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>GoT</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card22">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/40/d2/0c/40d20cd35a86f046aa295534d1f3cdf0.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://uploads.disquscdn.com/images/f682b35b81ddb17eca99e1af197edc8d0e4d48682afafebeeabb56455379e4e4.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Flames</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card23">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/originals/af/d3/ab/afd3ab2792619e00f8320c5c1bae07f6.gif" class="blurred" alt="Blurred Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Mod</b>
+            </h2>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="https://i.pinimg.com/originals/aa/f5/ba/aaf5ba5f8154b9abf8bbda6685992070.gif" class="clear" alt="Clear Image">
+          <div class="text-overlay">
+            <h2>
+              <b>Rix</b>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br />
+<!-- Modal Button -->
+<div class="center-container22">
+<button id="pop-up33button">Know More About Us</button>
+</div>
+<!-- Modal Structure -->
+<div id="pop-up33">
+  <div class="popup33-content">
+    <!-- ur content divs here -->
+<div style="text-align: center; text-shadow: 0 0 10px white; font-weight: bold; font-size: 2rem;">Founder</div>
+<div style="border: 4px solid yellow; margin: 10px; padding: 10px; border-radius: 12px;">
+  <div style="text-align: center;">
+    <div class="separator" style="clear: both;">
+      <a href="https://c.disquscdn.com/uploads/users/33104/1529/avatar200.jpg?1729719443" style="display: block; padding: 1em 0; text-align: center;">
+        <img alt="" border="0" width="200" data-original-height="200" data-original-width="200" src="https://c.disquscdn.com/uploads/users/33104/1529/avatar200.jpg?1729719443" style="border-radius: 50%;"/>
+      </a>
+    </div>
+  </div>
+
+      <table style="margin-top: 10px; width: 100%;">
+        <tbody>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Username/Nickname:</td>
+            <td style="text-align: left; width: 60%;">Rashik</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Full Name:</td>
+            <td style="text-align: left;">Rashik Anjum</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role/Title:</td>
+            <td style="text-align: left;">Owner</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Location:</td>
+            <td style="text-align: left;">Dhaka, Bangladesh. (GMT +6)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Interests:</td>
+            <td style="text-align: left;">Anime, manga, music, books, video games, and web designing/ programming.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Experience:</td>
+            <td style="text-align: left;">Experiences in aeronautical engineering (doing my BSc), pilot training, amateur web designing (did freelancing for a short period of time), and editing creative works of various small time authors/ writers.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Achievements:</td>
+            <td style="text-align: left;">Due to some unfortunate events, I had to quit working for a now very active chatroom. Started working on this chatroom afresh and I wouldn't say its much of an achievement but somehow managed to keep this alive.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Goals:</td>
+            <td style="text-align: left;">I have big dreams which sometimes I also think are just exaggerations. But, I want Citadel to be a massive chatroom with a very active member base, doing giveaways and stuff, new people everyday, etc etc. And well I am very interested in seeing that become a reality. However, I am not the kind of person that'd disregard my standards when it comes to community growth; I don't like toxicity of any kind and i want my community to be filled with friendly and open-minded people. And yeah, if all of that has become a reality by the time anyone's reading this, I guess I made it!</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+            <td style="text-align: left;">discord: <a href="https://discord.com/users/521712401788305420">rashikanjum</a>; disqus: <a href="https://disqus.com/by/rashikanjum/">@rashikanjum</a>; email: <a href="mailto:rashikanjum7770@gmail.com">rashikanjum7770@gmail.com</a>.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+            <td style="text-align: left;">I treat people the way they treat me. If you are a genuine person, a friendly and open-minded person, like me, I will NEVER treat you harshly. I am a peace-loving person and I welcome diversity, ALWAYS. I don't discriminate between people, I value everyone's opinions. And also, I am a music addict (Yeat fan).</td>
+          </tr>
+          <tr style="border-bottom: 1px solid yellow;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+            <td style="text-align: left;">During the time of putting in all this info, I am always finding out new and unique ideas to make my chatroom better-looking and easily accessible. I sit in front of my PC whenever I get time to make a new script or develop some app to make user experience better. I am still an amateur, so I can't talk big, but I love doing all that.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Quotes:</td>
+            <td style="text-align: left;">Focus on the leaves, you'll miss out on the tree. Focus on the tree, you'll miss out on the whole forest. (or something like that--from Vagabond by Inoue Takehiko)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+<div style="text-align: center; text-shadow: 0 0 10px white; font-weight: bold; font-size: 2rem;">Admins</div>
+  <br />
+  <div style="border-radius: 12px; border: 4px solid white; margin: 10px; padding: 10px;">
+    <div style="text-align: center;">
+      <a href="https://c.disquscdn.com/uploads/users/39872/2852/avatar200.jpg?1730266137">
+        <img border="0" data-original-height="320" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/39872/2852/avatar200.jpg?1730266137" width="200" style="border-radius: 50%;"/>
+      </a>
+    </div>
+    <table style="margin-top: 10px; width: 100%;">
+      <tbody>
+        <tr style="border-bottom: 1px solid rgb(171, 71, 188);">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+          <td style="text-align: left; width: 60%;">Most Evil</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+          <td style="text-align: left;">Admin</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+          <td style="text-align: left;">Just a chilled guy who is into fitness and animes 😎</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+          <td style="text-align: left;">
+            <a href="https://disqus.com/by/disqus_5FkCp9vNmq/">@Most Evil</a>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+          <td style="text-align: left;">8+ hours a day, on and off</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+          <td style="text-align: left;">Modding Games, Watching media</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+          <td style="text-align: left;">I am a twin</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+          <td style="text-align: left;">Able to explain "some" IT problems</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+          <td style="text-align: left;">Reminding people to be nice and to not take anything to seriously </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+          <td style="text-align: left;">Welcome to Citadel</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+  <div style="border-radius: 12px; border: 4px solid white; margin: 10px; padding: 10px;">
+    <div style="text-align: center;">
+      <a href="https://c.disquscdn.com/uploads/users/37454828278/5069/avatar200.jpg?1730102927">
+        <img border="0" data-original-height="200" data-original-width="20" height="200" src="https://c.disquscdn.com/uploads/users/37454828278/5069/avatar200.jpg?1730102927" width="200" style="border-radius: 50%;"/>
+      </a>
+    </div>
+    <table style="margin-top: 10px; width: 100%;">
+      <tbody>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+          <td style="text-align: left; width: 60%;">Nanania</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+          <td style="text-align: left;">Admin</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+          <td style="text-align: left;">Well I am a sensitive person I get hurt easily so I just want a chatroom that can take care of me</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+          <td style="text-align: left;">I don't have discord you can reach me through dq @disqus_l2xHMl5WaN</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+          <td style="text-align: left;">It depends honestly </td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+          <td style="text-align: left;">Reading manhwas </td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+          <td style="text-align: left;">I am an idiot....haha</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+          <td style="text-align: left;">Um poems ig?</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+          <td style="text-align: left;">Helping everyone have a comfortable time</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+          <td style="text-align: left;">Please be safe and happy I love you</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+<div style="border: 4px solid white; border-radius:12px; margin: 10px; padding: 10px;">
+      <div style="text-align: center;">
+        <a href="https://c.disquscdn.com/uploads/users/40207/6397/avatar200.jpg?1730057018">
+          <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/40207/6397/avatar200.jpg?1730057018" width="200" style="border-radius: 50%;"/>
+        </a>
+      </div>
+
+      <table style="margin-top: 10px; width: 100%;">
+        <tbody>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+            <td style="text-align: left; width: 60%;">AdiyaroX</td>
+          </tr>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+            <td style="text-align: left;">Admin</td>
+          </tr>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+            <td style="text-align: left;">Retired esports player and translator. Typical student guy with a average face at that √^-^</td>
+          </tr>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+            <td style="text-align: left;">Disqus:@nobrusenpai Discord:adiyarox Email:adiyarox47@gmail.com</td>
+          </tr>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+            <td style="text-align: left;">GMT +5:30 [ I'm a night owl :) ]</td>
+          </tr>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+            <td style="text-align: left;">Gaming, reading, translations, watching(anime,movie etc), cycling, mountain climbing, cooking and Yapping too ;)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+            <td style="text-align: left;">Just reply my message or tag me, I will be there like a flash (flexing ^^)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+            <td style="text-align: left;">Some event planning and cooking(In both ways) ig and Im just easy to find as searching for a random mob in a game ^-^</td>
+          </tr>
+          <tr style="border-bottom: 1px solid white;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+            <td style="text-align: left;">Don't be rude to other members without a reason or you will see my fangs at you :)</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+            <td style="text-align: left;">Welcome to Citadel and Leviathan(Discord and Disqus) have fun here ^^</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <br />
+  <div style="text-align: center; text-shadow: 0 0 10px white; font-weight: bold; font-size: 2rem;">Mods</div>
+  <br />
+  <div style="border-radius: 12px; border: 4px solid skyblue; margin: 10px; padding: 10px;">
+    <div style="text-align: center;">
+      <a href="https://c.disquscdn.com/uploads/users/40528/1323/avatar200.jpg?1729349414">
+        <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/40528/1323/avatar200.jpg?1729349414" width="200" style="border-radius: 50%;"/>
+      </a>
+    </div>
+    <table style="margin-top: 10px; width: 100%;">
+      <tbody>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+          <td style="text-align: left; width: 60%;">Aneemay</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+          <td style="text-align: left;">Could make chat active ig</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+          <td style="text-align: left;">Just a guy suffering the side effects of no lifing</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+          <td style="text-align: left;">dc username- aneemaay</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+          <td style="text-align: left;">All time if I am not busy</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+          <td style="text-align: left;">Being curious and ofc anime, manhwas and mangas</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+          <td style="text-align: left;">My online no lifing started due to Frieren anime. Go and watch it</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+          <td style="text-align: left;">Could criticize and give ideas</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+          <td style="text-align: left;">Just don't fight and don't be toxic</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+          <td style="text-align: left;">I am down to chat anytime if I am free</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+  <div style="border-radius: 12px; border: 4px solid skyblue; margin: 10px; padding: 10px;">
+    <div style="text-align: center;">
+      <a href="https://c.disquscdn.com/uploads/users/39100/1447/avatar200.jpg?1728540909">
+        <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/39100/1447/avatar200.jpg?1728540909" width="200" style="border-radius: 50%;"/>
+      </a>
+    </div>
+    <table style="margin-top: 10px; width: 100%;">
+      <tbody>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+          <td style="text-align: left; width: 60%;">Hori</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+          <td style="text-align: left;">General Chat Mod</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+          <td style="text-align: left;">You can call me Hori.I love reading novels (fantasy mostly). I like to chat with people sometimes, well it's good to spend some time talking with others. The people in community are pretty good, they aren't toxic and are easy to hold a conversation with.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+          <td style="text-align: left;">unendinghorizon19@gmail.com</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+          <td style="text-align: left;">India, GMT+5:30. Mostly at night from 8 to 11 pm, sometimes till 12.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+          <td style="text-align: left;">I like to read manhwa/manhua/manga, I also occasionally watch anime and read novels. As for games, I don't really play them much.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+          <td style="text-align: left;">I can be a bit sus at times, so ig bear with it.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+          <td style="text-align: left;">None</td>
+        </tr>
+        <tr style="border-bottom: 1px solid skyblue;">
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+          <td style="text-align: left;">No toxicity ig</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+          <td style="text-align: left;">Stay safe, stay healthy and get Outta that rabbit hole you've been stuck in.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+    <div style="border-radius: 12px; border: 4px solid skyblue; margin: 10px; padding: 10px;">
+      <div style="text-align: center;">
+        <a href="https://c.disquscdn.com/uploads/users/38472658856/4512/avatar200.jpg?1727452030">
+          <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/38472658856/4512/avatar200.jpg?1727452030" width="200" style="border-radius: 50%;"/>
+        </a>
+      </div>
+
+      <table style="margin-top: 10px; width: 100%;">
+        <tbody>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+            <td style="text-align: left; width: 60%;">Helldiver</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+            <td style="text-align: left;">Moderator </td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+            <td style="text-align: left;">I love music, it’s one of the biggest parts of my life. I really enjoy being here, I am accepted and have people to talk to</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+            <td style="text-align: left;">thereyesboys@outlook.com</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+            <td style="text-align: left;">Usually anywhere from 3:10 pm to 10:30</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+            <td style="text-align: left;">Video games (such as call of duty) and music, I also love warhammer 40k</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+            <td style="text-align: left;">I don’t have anything that interested to say other than I’m good at painting plastic models</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+            <td style="text-align: left;">Planning </td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+            <td style="text-align: left;">Anything the owner says </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+            <td style="text-align: left;">Yo what’s goodie gang 🤓</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+<br />
+    <div style="border-radius: 12px; border: 4px solid skyblue; margin: 10px; padding: 10px;">
+      <div style="text-align: center;">
+        <a href="https://c.disquscdn.com/uploads/users/40215/3009/avatar200.jpg?1730092779">
+          <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/40215/3009/avatar200.jpg?1730092779" width="200" style="border-radius: 50%;"/>
+        </a>
+      </div>
+
+      <table style="margin-top: 10px; width: 100%;">
+        <tbody>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+            <td style="text-align: left; width: 60%;">Doughslice</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+            <td style="text-align: left;">General chat moderator</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+            <td style="text-align: left;">Hi I'm doughslice and I like HATSUME MIKU and ADO and I'm just a average little weeb and a little bit of a introverted irl</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+            <td style="text-align: left;">Discord name: DoughSlice </td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+            <td style="text-align: left;">Southeast asia/Philippines</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+            <td style="text-align: left;">I really like badminton playing moba games and playing roblox ofc and I do have reading hobbies</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+            <td style="text-align: left;">Fun fact: I like nice people</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+            <td style="text-align: left;">I can do shadow puppets</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+            <td style="text-align: left;">Pls be positive and not be negative</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+            <td style="text-align: left;">Hi as a moderator I won't be mean hehe</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <div style="border: 4px solid skyblue; border-radius:12px; margin: 10px; padding: 10px;">
+      <div style="text-align: center;">
+        <a href="url here">
+          <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/37795368767/9010/avatar200.jpg?1729789821" width="200" style="border-radius: 50%;"/>
+        </a>
+      </div>
+
+      <table style="margin-top: 10px; width: 100%;">
+        <tbody>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+            <td style="text-align: left; width: 60%;">Lady_head_of_blackorganisation</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+            <td style="text-align: left;">Chating keeping peace or save users (Mod)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+            <td style="text-align: left;">A secret that is literally interested in everything and will change personality for different people the reason I came was it was fun and nobody in real life have Time</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+            <td style="text-align: left;">abubakararain71@gmail.com</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+            <td style="text-align: left;">9:00pm to 10:00pm 6:00am to7:00am</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+            <td style="text-align: left;">Spamming roasting </td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+            <td style="text-align: left;">Art writing chess martial arts </td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+            <td style="text-align: left;">Graphic designing event planning </td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+            <td style="text-align: left;">People should not go beyond limits like talking about sexual things </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+            <td style="text-align: left;">Yoo! Wanna join my organisation </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+	<br />
+    <div style="border: 4px solid skyblue; border-radius:12px; margin: 10px; padding: 10px;">
+      <div style="text-align: center;">
+        <a href="https://c.disquscdn.com/uploads/users/37536266801/7630/avatar200.jpg?1730055587">
+          <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/37536266801/7630/avatar200.jpg?1730055587" width="200" style="border-radius: 50%;"/>
+        </a>
+      </div>
+
+      <table style="margin-top: 10px; width: 100%;">
+        <tbody>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+            <td style="text-align: left; width: 60%;">God of throwing😎</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+            <td style="text-align: left;">When im on, i am friendly to everyone, and welcome new people, so id like to be a general chat moderator</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+            <td style="text-align: left;">I am someone who likes to read manhwa, i read most on asura scans and my favorite manhwa is ORV. My hobies are playing games, working out and i am good at basicly every sport. I like this comunity because everyone is friendly all the time, and is fun to chat with. </td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+            <td style="text-align: left;">You can mention me in ether disqus or @ me in discord. My discord is SANPATRIO #2636</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+            <td style="text-align: left;">I am in timesone +1, and i am online most of the school days and sometimes after. After school, i am more active on discord</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+            <td style="text-align: left;">I like to read manhwa, i play rounds when i habe time and i am good at almost every ball sport</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+            <td style="text-align: left;">My push up record is 137. 😊</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+            <td style="text-align: left;">I am not good at coding or anything like that, but i can give ideas</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+            <td style="text-align: left;">No</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+            <td style="text-align: left;">If you want any manhwa recomendations, just ask me and i will give you some</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+
+    <div style="border: 4px solid skyblue; border-radius: 12px; margin: 10px; padding: 10px;">
+      <div style="text-align: center;">
+        <a href="https://c.disquscdn.com/uploads/users/40037/9809/avatar200.jpg?1729873318">
+          <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/40037/9809/avatar200.jpg?1729873318" width="200" style="border-radius: 50%;"/>
+        </a>
+      </div>
+
+      <table style="margin-top: 10px; width: 100%;">
+        <tbody>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+            <td style="text-align: left; width: 60%;">Flames</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+            <td style="text-align: left;">General Chat Moderator</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+            <td style="text-align: left;">I Am From Pakistan. I Like Reading Books And Watching Anime. I Like Being Here Since The Community Is Very Good And I Like Talking To Complete Strangers Online.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+            <td style="text-align: left;">Discord: flames_9000</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+            <td style="text-align: left;">8:30-11:30PM (PKT) And Some Random Hours Here And There</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+            <td style="text-align: left;">I Play Cricket And Badminton, Read Alot Of Books, And Watch Anime As Well!</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+            <td style="text-align: left;">N/A</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+            <td style="text-align: left;">N/A</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+            <td style="text-align: left;">Tagging People And Removing Comments That Aren't Allowed</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+            <td style="text-align: left;">Let's All Have Fun!!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+
+    <div style="border: 4px solid skyblue; borderr-radius: 12px; margin: 10px; padding: 10px;">
+      <div style="text-align: center;">
+        <a href="https://c.disquscdn.com/uploads/users/40015/2109/avatar200.jpg?1730377535">
+          <img border="0" data-original-height="200" data-original-width="200" height="200" src="https://c.disquscdn.com/uploads/users/40015/2109/avatar200.jpg?1730377535" width="200" style="border-radius: 50%;"/>
+        </a>
+      </div>
+
+      <table style="margin-top: 10px; width: 100%;">
+        <tbody>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right; width: 40%;">Admin/Moderator's Name:</td>
+            <td style="text-align: left; width: 60%;">Rix</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Role:</td>
+            <td style="text-align: left;">General Chat Moderator</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Introduction/Bio:</td>
+            <td style="text-align: left;">I am a boy aircraft lover and a strategy and war fan. I will be shy at very first but after, i may annoy u a bit, or a LOT if i like u. I accepte any jokes. Just don't play with my trust because i might take it very badly. </td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Contact Information:</td>
+            <td style="text-align: left;">As for Citadel, i like being here because it's my second family, and like any family, we love it.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid palegoldenrod;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Timezone/Availability:</td>
+            <td style="text-align: left;">GMT+2 random time but quite a lot</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Favorite Activities:</td>
+            <td style="text-align: left;">Strategy/RTS games / Planes or war vehicle games(war thunder) building vehicle games</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Fun Facts:</td>
+            <td style="text-align: left;">I am very shy at begining, but when i know you better, i could be like a glue</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Special Skills:</td>
+            <td style="text-align: left;">Patience and understanding. I think it's my main skill here.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid skyblue;">
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Rules/Guidelines They Enforce:</td>
+            <td style="text-align: left;">upvoting as much as possible | don't push too far when one says to stop | never hit a girl (personal, i hate guys who hit girl, event to laugh)</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; padding-right: 10px; text-align: right;">Personal Message:</td>
+            <td style="text-align: left;">I hope we get to know each others to the point we feel like a real familly. I think we need to understand each others. And in a familly, we annoy each others within limits, that's the magic i want in Citadel!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- ur content divs here -->
+  </div>
+</div>
+<style>
+  .center-container22 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Pop-up Background and Fade Effect */
+  #pop-up33 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  /* Pop-up Content */
+  #pop-up33 .popup33-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(164,101,224,0.8);
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 80vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Pop-up Button */
+  #pop-up33button {
+    background-color: rgba(166,225,255,0.1);
+    font-size: 18px;
+    text-shadow: 0 0 10px white;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    z-index: 50;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+  }
+  
+  #pop-up33button:hover {
+    background-color: rgb(132,180,204,0.5);
+    transform: scale(1.005);
+    transition: transform 0.3s ease-in-out;
+  }
+</style>
+
+<script>
+  const popUp = document.getElementById('pop-up33'); // Reference to the pop-up with ID 'pop-up33'
+  const popUpButton = document.getElementById('pop-up33button'); // Reference to the button with ID 'pop-up33button'
+
+  // Function to open the pop-up with fade-in effect
+  function openPopUp() {
+    popUp.style.display = 'block'; // Show the pop-up
+    setTimeout(() => {
+      popUp.style.opacity = '1'; // Set opacity to 1 for fade-in effect
+    }, 10); // Small delay to trigger the transition
+  }
+
+  // Function to close the pop-up with fade-out effect
+  function closePopUp() {
+    popUp.style.opacity = '0'; // Set opacity to 0 for fade-out effect
+    setTimeout(() => {
+      popUp.style.display = 'none'; // Hide the pop-up after the transition
+    }, 1000); // Delay matches the transition duration
+  }
+
+  // Open pop-up when button is clicked
+  popUpButton.onclick = openPopUp;
+
+  // Close pop-up when clicking outside the pop-up content
+  window.onclick = (event) => {
+    if (event.target === popUp) closePopUp(); // Close if the background is clicked
+  };
+</script>
+<br />
+<hr />
+<br />
+<div style="font-size:2em; font-weight:bold; text-align:center; text-shadow:0 0 10px white;">Event Timer</div>
+<div id="countdown">
+  <h2 style="font-size:2em; font-weight:bold; text-shadow:0 0 5px white;">
+	This year ends in:
+  </h2>
+  <div id="timer">
+    <span id="days"></span> days : <span id="hours"></span> hours : <span id="minutes"></span> minutes : <span id="seconds"></span> seconds
+  </div>
+  <style>
+    #countdown {
+      text-align: center;
+      font-size: 1em;
+      text-shadow: 5px;
+      margin: 20px 0;
+      background-color: rgb(132,180,204,0.5);
+      box-shadow: 0 0 15px rgb(132,180,204);
+      padding: 20px;
+      /* Add padding for spacing */
+      border-radius: 12px;
+      /* Rounded corners */
+    }
+
+    #timer {
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+
+    #timer span {
+      margin: 0 5px;
+    }
+  </style>
+  <script>
+    // Set the start and end date for the countdown
+    var startDate = new Date("August 4, 2024 12:00:00").getTime(); // Adjust start date
+    var endDate = new Date("January 1, 2025 00:00:00").getTime(); // Adjust end date
+    // Update the countdown every second
+    var countdown = setInterval(function() {
+      // Get current date and time
+      var now = new Date().getTime();
+      // Calculate the distance between now and the end date
+      var distance = endDate - now;
+      // Calculate days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Display the countdown timer
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("timer").innerHTML = "Event has ended!";
+      }
+    }, 1000); // Update every second (1000 milliseconds)
+  </script>
+</div>
+<br />
+<hr />
+<br />
+<!-- Discord Invite Link Tool -->
+<a href="https://discord.gg/c5vu4VDyVP">
+  <button class="fab"></button>
+</a>
+<style>
+  /* Original styles for non-mobile users */
+  .fab {
+    position: fixed;
+    bottom: 55px;
+    right: 10px;
+    line-height: 20px;
+    background-image: url('https://uploads.disquscdn.com/images/a2e25a70b122ea3f98afd2740b0fce8fcf4c561323fd42de38b4702976876a4e.png');
+    background-size: cover;
+    background-color: rgba(183,202,233,0.5);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  .fab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
+    background-color: rgba(15,81,183,0.5);
+  }
+
+  /* Adjustments for smaller screens */
+  @media (max-width: 360px) {
+    .fab {
+      position: fixed;
+      bottom: 46px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+</style>
+<!-- Scroll to Top Button -->
+<button id="scroll-to-top"></button>
+<script>
+  // Scroll to top functionality
+  document.querySelector('#scroll-to-top').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // Show/hide button based on scroll position
+  window.addEventListener('scroll', function() {
+    const scrollButton = document.querySelector('#scroll-to-top');
+    if (window.scrollY > 100) {
+      scrollButton.classList.add('visible');
+    } else {
+      scrollButton.classList.remove('visible');
+    }
+  });
+</script>
+<style>
+  #scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(183,202,233,0.5);
+    background-image: url('https://uploads.disquscdn.com/images/c01b7c1c00519e3b07096bfe7a4ccf1f40655ce410111af2fe4c67eeca655ea5.png');
+    background-size: cover;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+  }
+
+  #scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #scroll-to-top:hover {
+    transform: scale(1.001);
+    background-color: rgba(15,81,183,0.5);
+    box-shadow: 0 0 15px white;
+  }
+
+  @media (max-width: 360px) {
+    #scroll-to-top {
+      width: 30px;
+      height: 30px;
+      bottom: 10px;
+      right: 10px;
+      font-size: 10px;
+      line-height: 30px;
+    }
+  }
+</style>
+
+<!-- Customizable BG Button -->
+<button id="bg-button">BG</button>
+
+<!-- Customizable Background -->
+<!-- Modal -->
+<div id="bg-modal" class="bg-modal">
+  <div class="modal-content">
+    <h2>🌺 Background Customization 🌺</h2>
+    <div id="bg-options" class="bg-options">
+      <!-- Predefined Background Thumbnails -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/c323187e05f27262103a835ff0403307412b85f8900e63dab7005d11c1d5f1af.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/c323187e05f27262103a835ff0403307412b85f8900e63dab7005d11c1d5f1af.jpg');"></div>
+        <p>Black</p>
+      </div>
+      <!-- Repeat for all 12 backgrounds -->
+      <!-- BG 2 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/cf07bc8c596e35ed87158f6eeea0f570a713b2378cc64d77d8103612c64fc5cd.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/cf07bc8c596e35ed87158f6eeea0f570a713b2378cc64d77d8103612c64fc5cd.jpg');"></div>
+        <p>Red</p>
+      </div>
+      <!-- BG 3 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/23e76fbc9efc753f39eb9ac51525789f838c3f4b648e6be49b2673314614c38a.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/23e76fbc9efc753f39eb9ac51525789f838c3f4b648e6be49b2673314614c38a.jpg');"></div>
+        <p>Maroon</p>
+      </div>
+ 	  <!-- BG 3 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/dae06c5abb2945bf919df75f7675a45a49d22e80efe7552b2ea501be64039a73.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/dae06c5abb2945bf919df75f7675a45a49d22e80efe7552b2ea501be64039a73.jpg');"></div>
+        <p>Brown</p>
+      </div>
+ 	  <!-- BG 4 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/9c35a821e74ecc22a29858def394122b4845c6efc5d4a108abf0208705bec043.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/9c35a821e74ecc22a29858def394122b4845c6efc5d4a108abf0208705bec043.jpg');"></div>
+        <p>Orange</p>
+      </div>
+  	  <!-- BG 5 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/45a5064767e061b42d37a2314a01b1b959ebaeaabb04e1ec7129e140731ad43c.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/45a5064767e061b42d37a2314a01b1b959ebaeaabb04e1ec7129e140731ad43c.jpg');"></div>
+        <p>Gold</p>
+      </div>
+  	  <!-- BG 6 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/7b908d20aa2976cc75f65b3f0c546c5f35d77bf295163d05e9d3c89ac868958c.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/7b908d20aa2976cc75f65b3f0c546c5f35d77bf295163d05e9d3c89ac868958c.jpg');"></div>
+        <p>Olive</p>
+      </div>
+  	  <!-- BG 7 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/735d98046f1b5d2b6d667b627e34931d59e96b7e91b5dd271180cde13a985215.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/735d98046f1b5d2b6d667b627e34931d59e96b7e91b5dd271180cde13a985215.jpg');"></div>
+        <p>Green</p>
+      </div>
+  	  <!-- BG 8 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/ff5802fa62944b35bb7c95c68b0f3cfefef95081d4e3d01a21b1cdd76bcad15c.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/ff5802fa62944b35bb7c95c68b0f3cfefef95081d4e3d01a21b1cdd76bcad15c.jpg');"></div>
+        <p>Teal</p>
+      </div>
+  	  <!-- BG 9 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/58cf5827b98b44c3f397d89aa6668a7c8155bce45c92b46739dbf69ea593f2d8.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/58cf5827b98b44c3f397d89aa6668a7c8155bce45c92b46739dbf69ea593f2d8.jpg');"></div>
+        <p>Cyan</p>
+      </div>
+  	  <!-- BG 10 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/c6d7086459c5af542489cb9db7f9584966dbdf1f7ca183c47bf4531b047280b0.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/c6d7086459c5af542489cb9db7f9584966dbdf1f7ca183c47bf4531b047280b0.jpg');"></div>
+        <p>Turquoise</p>
+      </div>
+  	  <!-- BG 11 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/52e5a6e34d31e58506d70387e027142eec5f4b6b0a7dac0304fc20c8dd3ac9db.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/52e5a6e34d31e58506d70387e027142eec5f4b6b0a7dac0304fc20c8dd3ac9db.jpg');"></div>
+        <p>Blue</p>
+      </div>
+  	  <!-- BG 12 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/c52ddcb13ac520dd47b54033e6b6c51d725d15872a38fc8935f5e64d7bdd43a7.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/c52ddcb13ac520dd47b54033e6b6c51d725d15872a38fc8935f5e64d7bdd43a7.jpg');"></div>
+        <p>Navy</p>
+      </div>
+  	  <!-- BG 13 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/2b95acd2d7cbbc693207f37c613eaa740dfe48221947b6710112f41e46f9c007.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/2b95acd2d7cbbc693207f37c613eaa740dfe48221947b6710112f41e46f9c007.jpg');"></div>
+        <p>Purple</p>
+      </div>
+  	  <!-- BG 14 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/b51c472adffbeb6acc675bef4ac0cc1d02e791bc4faf487db42bb9adf3f17a02.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/b51c472adffbeb6acc675bef4ac0cc1d02e791bc4faf487db42bb9adf3f17a02.jpg');"></div>
+        <p>Indigo</p>
+      </div>
+  	  <!-- BG 15 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/5535af4e0339b33d82a66f04ffc2f046d5128c8414591f7e328545a9b53dbc34.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/5535af4e0339b33d82a66f04ffc2f046d5128c8414591f7e328545a9b53dbc34.jpg');"></div>
+        <p>Pink</p>
+      </div>
+  	  <!-- BG 16 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/439125d75a3e893f5cf2660579ecf46b788dd617765303e4c9f94fea5c0aec10.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/439125d75a3e893f5cf2660579ecf46b788dd617765303e4c9f94fea5c0aec10.jpg');"></div>
+        <p>Magenta</p>
+      </div>
+  	  <!-- BG 17 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/6e3431fb5e56b06237f30d9d4f9ee92ecfd0dd435cf8223013078bc784531bac.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/6e3431fb5e56b06237f30d9d4f9ee92ecfd0dd435cf8223013078bc784531bac.jpg');"></div>
+        <p>Gray</p>
+      </div>
+  	  <!-- BG 18 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/20aa05d6911fa0cb16000c1b2bb2da89391af76350a89b5eb7f0826809df3e96.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/20aa05d6911fa0cb16000c1b2bb2da89391af76350a89b5eb7f0826809df3e96.jpg');"></div>
+        <p>Charcoal</p>
+      </div>
+      <!-- BG 19 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/23435aec84230ecd36411721a1856406b83b1416ba3723e0fd85297a65c04d5e.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/23435aec84230ecd36411721a1856406b83b1416ba3723e0fd85297a65c04d5e.jpg');"></div>
+        <p>Anime 1</p>
+      </div>
+      <!-- BG 20 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/446996348aa204af103934dce35990bb339630839eae2f32833e0e736d87da20.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/446996348aa204af103934dce35990bb339630839eae2f32833e0e736d87da20.jpg');"></div>
+        <p>Anime 2</p>
+      </div>
+      <!-- BG 21 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/baabbfa19426d03b491f680b13d29c473636deb26b304f8d74a16966c188d065.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/baabbfa19426d03b491f680b13d29c473636deb26b304f8d74a16966c188d065.jpg');"></div>
+        <p>Anime 3</p>
+      </div>
+      <!-- BG 22 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/6ccb6a5f3ed7e238ddf41125dceb4e0428e06eea222a78eeb7261132f014ff57.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/6ccb6a5f3ed7e238ddf41125dceb4e0428e06eea222a78eeb7261132f014ff57.jpg');"></div>
+        <p>Anime 4</p>
+      </div>
+      <!-- BG 23 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/77453db4ea20c1ac2e2e8defb6b71ab1bfe9fd640a747f5916088b3e83eb1e1a.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/77453db4ea20c1ac2e2e8defb6b71ab1bfe9fd640a747f5916088b3e83eb1e1a.jpg');"></div>
+        <p>Anime 5</p>
+      </div>
+      <!-- BG 24 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/008841d6515913285138c6c21dc8ef78f40fdcb95b3fc89344908fd25c35aa4f.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/008841d6515913285138c6c21dc8ef78f40fdcb95b3fc89344908fd25c35aa4f.jpg');"></div>
+        <p>Anime 6</p>
+      </div>
+      <!-- BG 25 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/501662da2a15a89a07e2f28476ed6d74af45afbe4144280d6db80cd925329814.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/501662da2a15a89a07e2f28476ed6d74af45afbe4144280d6db80cd925329814.jpg');"></div>
+        <p>Anime 7</p>
+      </div>
+      <!-- BG 26 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/2bbef8e1813f3878c788b93a3a92686c4f8b6717452c06f17b6769d83a5af738.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/2bbef8e1813f3878c788b93a3a92686c4f8b6717452c06f17b6769d83a5af738.jpg');"></div>
+        <p>Anime 8</p>
+      </div>
+      <!-- BG 27 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/d172c9b5a2f2ecf05f27c4a4d1943072db79acc8edc1a479dd19ca28c6a388ca.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/d172c9b5a2f2ecf05f27c4a4d1943072db79acc8edc1a479dd19ca28c6a388ca.jpg');"></div>
+        <p>Anime 9</p>
+      </div>
+      <!-- BG 28 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/03cd998b1ae178b763edbad1f8da55f1297542706b8f2f677642c14480a6c6ff.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/03cd998b1ae178b763edbad1f8da55f1297542706b8f2f677642c14480a6c6ff.jpg');"></div>
+        <p>Anime 10</p>
+      </div>
+      <!-- BG 29 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/5a5f8d6881dc6f950a0ec45546af0e2c387277450eabf7ae5b5eba95926b83cf.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/5a5f8d6881dc6f950a0ec45546af0e2c387277450eabf7ae5b5eba95926b83cf.jpg');"></div>
+        <p>Anime 11</p>
+      </div>
+      <!-- BG 30 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/4b2abc06d98eb10fef2ca4bf1644035ee954f82b523bad8362d1b178b150b935.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/4b2abc06d98eb10fef2ca4bf1644035ee954f82b523bad8362d1b178b150b935.jpg');"></div>
+        <p>Anime 12</p>
+      </div>
+      <!-- BG 31 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/16cf69c79b3e0e8562337d61cd365a9c503f61244d094676377f9681dc4323da.png">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/16cf69c79b3e0e8562337d61cd365a9c503f61244d094676377f9681dc4323da.png');"></div>
+        <p>Anime 13</p>
+      </div>
+      <!-- BG 32 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/3e667183ae0b434fda96f8224dbc806130f99aa19b52e3649c9ed70d30a47fa8.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/3e667183ae0b434fda96f8224dbc806130f99aa19b52e3649c9ed70d30a47fa8.jpg');"></div>
+        <p>Anime 14</p>
+      </div>
+      <!-- BG 33 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/d2eedb362b9ec289de922a1c54ed0627eaa24f488d5833ccc907c0a13012f2b2.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/d2eedb362b9ec289de922a1c54ed0627eaa24f488d5833ccc907c0a13012f2b2.jpg');"></div>
+        <p>Anime 15</p>
+      </div>
+      <!-- BG 34 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/6e41485ae35cb56186216473b0b9c2e3006a207e81ff0260c4e55bd1e0913785.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/6e41485ae35cb56186216473b0b9c2e3006a207e81ff0260c4e55bd1e0913785.jpg');"></div>
+        <p>Anime 16</p>
+      </div>
+      <!-- BG 35 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/88a876d3d63ab2ba2aace213df60ce838af8e25b035821a349a01c942cbf7380.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/88a876d3d63ab2ba2aace213df60ce838af8e25b035821a349a01c942cbf7380.jpg');"></div>
+        <p>Anime 17</p>
+      </div>        
+      <!-- BG 36 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/c868f8bd54ac6f285ca06cadea4faa9185b30024d9cfde549c770fb381383678.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/c868f8bd54ac6f285ca06cadea4faa9185b30024d9cfde549c770fb381383678.jpg');"></div>
+        <p>Nature 1</p>
+      </div>  
+      <!-- BG 37 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/e1f53627fe22b37699afe169e8db2cbc85977001a61ff970004d5869542a76b5.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/e1f53627fe22b37699afe169e8db2cbc85977001a61ff970004d5869542a76b5.jpg');"></div>
+        <p>Nature 2</p>
+      </div>
+      <!-- BG 38 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/679825fda989f02ddf1cba3dc904504554b1d58eec004e480127b587961230ca.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/679825fda989f02ddf1cba3dc904504554b1d58eec004e480127b587961230ca.jpg');"></div>
+        <p>Nature 3</p>
+      </div> 
+      <!-- BG 39 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/f9c460dcdbad8e1dea2a2f78c98b9e9e5b210d4ef6b53b189cc7a8ba6fa9df26.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/f9c460dcdbad8e1dea2a2f78c98b9e9e5b210d4ef6b53b189cc7a8ba6fa9df26.jpg');"></div>
+        <p>Nature 4</p>
+      </div> 
+      <!-- BG 40 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/f9c460dcdbad8e1dea2a2f78c98b9e9e5b210d4ef6b53b189cc7a8ba6fa9df26.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/f9c460dcdbad8e1dea2a2f78c98b9e9e5b210d4ef6b53b189cc7a8ba6fa9df26.jpg');"></div>
+        <p>Nature 5</p>
+      </div>       
+      <!-- BG 41 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/a00c1bf0ec15b634f4523c15e2ecd09d7112bb8b56481f2ef1244f64b07a668c.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/a00c1bf0ec15b634f4523c15e2ecd09d7112bb8b56481f2ef1244f64b07a668c.jpg');"></div>
+        <p>Phone 1</p>
+      </div> 
+      <!-- BG 42 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/ba6d05d7a2992ec5ffd7d58e0c2198bb1e0d1a3063674059bee38f0e32cda156.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/ba6d05d7a2992ec5ffd7d58e0c2198bb1e0d1a3063674059bee38f0e32cda156.jpg');"></div>
+        <p>Phone 2</p>
+      </div>
+      <!-- BG 43 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/9b4a6cac9e19d3eac21515cdd0f66e30817101038289dadd2498a96dfe5de5d7.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/9b4a6cac9e19d3eac21515cdd0f66e30817101038289dadd2498a96dfe5de5d7.jpg');"></div>
+        <p>Phone 3</p>
+      </div>  
+      <!-- BG 44 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/3c49826cf60d42fec93d10a0dad6f3b6630134a7a0c7a4dd8e056689dc95a1b9.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/3c49826cf60d42fec93d10a0dad6f3b6630134a7a0c7a4dd8e056689dc95a1b9.jpg');"></div>
+        <p>Phone 4</p>
+      </div> 
+      <!-- BG 45 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/5b67ddd879b5787ceab6ae74bffb1c1ac452b1d5a1e6c8b0d6a761e8a5004e40.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/5b67ddd879b5787ceab6ae74bffb1c1ac452b1d5a1e6c8b0d6a761e8a5004e40.jpg');"></div>
+        <p>Phone 5</p>
+      </div>    
+      <!-- BG 46 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/0bf9f330f0726fb41f61eaa382425961d52f5a1b9a74aa2b8759c325e7cbccfd.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/0bf9f330f0726fb41f61eaa382425961d52f5a1b9a74aa2b8759c325e7cbccfd.jpg');"></div>
+        <p>Phone 6</p>
+      </div>     
+      <!-- BG 47 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/dfc13c3175f93d7128a438390f545f62fdf3dd0fa221550bfd0b288173fe8da7.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/dfc13c3175f93d7128a438390f545f62fdf3dd0fa221550bfd0b288173fe8da7.jpg');"></div>
+        <p>Phone 7</p>
+      </div>  
+      <!-- BG 48 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/8c1e108db1172ce4cc6a3b9bb945efc820cb8ed0fd1b53a983266b01d35d9a3c.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/8c1e108db1172ce4cc6a3b9bb945efc820cb8ed0fd1b53a983266b01d35d9a3c.jpg');"></div>
+        <p>Phone 8</p>
+      </div>
+      <!-- BG 49 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/f2928b46eb9e51a8c6795cc8e12d23196a71645d35e019116487c65020efac44.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/f2928b46eb9e51a8c6795cc8e12d23196a71645d35e019116487c65020efac44.jpg');"></div>
+        <p>Phone 9</p>
+      </div>      
+      <!-- BG 50 -->
+      <div class="bg-thumbnail" data-bg-url="https://uploads.disquscdn.com/images/5438c0300cdf65267f76bcfb8b152de6dee6a9980e55e57aa402397e99ef75e6.jpg">
+        <div class="bg-preview" style="background-image: url('https://uploads.disquscdn.com/images/5438c0300cdf65267f76bcfb8b152de6dee6a9980e55e57aa402397e99ef75e6.jpg');"></div>
+        <p>Phone 10</p>
+      </div>      
+      <!-- Upload Background -->
+      <div id="upload-bg" class="bg-thumbnail">
+        <input type="file" id="bg-upload" accept="image/*">
+        <p>Upload your own background image if you don't like the existing ones.</p>
+      </div>
+    </div>
+    <div class="modal-buttons">
+      <button id="save-bg">Save</button>
+      <button id="cancel-bg">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<style>
+#bg-button {
+  background-color: rgba(183,202,233,0.5);
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 8px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 45px;
+  left: 10px;
+  z-index: 50;
+  border-radius: 12px;
+  box-shadow: 0 0 5px white;
+}
+
+#bg-button:hover {
+  background-color: rgba(15,81,183,0.5); /* Slightly darker shade of the original */
+  transform: scale(1.001); /* Slightly enlarges the button */
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  box-shadow: 0 0 15px white;
+}
+
+/* Modal styling */
+.bg-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s;
+}
+
+.modal-content {
+  background-color: rgba(164,101,224,0.8);
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+  padding: 20px;
+  border-radius: 20px; /* Increased border radius for more pronounced rounding */
+  width: 80%;
+  max-width: 600px;
+  max-height: 80vh; /* Limit the maximum height to 80% of the viewport height */
+  text-align: center;
+  text-shadow: 2px 2px 5px #000000;
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow to enhance the rounded effect */
+}
+
+/* Default Scrollbar */
+.modal-content {
+  scrollbar-width: auto; /* For Firefox */
+}
+
+.modal-content::-webkit-scrollbar {
+  width: auto; /* Revert to default width */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent; /* Revert to default track style */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: transparent; /* Revert to default thumb style */
+}
+
+.bg-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bg-thumbnail {
+  margin: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bg-preview {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.bg-thumbnail.selected {
+  border-color: #AB47BC;
+}
+
+.modal-buttons button {
+  background-color: #AB47BC;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* Center the background image */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
+
+<script>
+// Open modal
+document.getElementById('bg-button').onclick = function() {
+  document.getElementById('bg-modal').style.display = 'flex';
+};
+
+// Close modal on cancel
+document.getElementById('cancel-bg').onclick = function() {
+  document.getElementById('bg-modal').style.display = 'none';
+};
+
+// Background selection and preview
+const thumbnails = document.querySelectorAll('.bg-thumbnail');
+let selectedBgUrl = null;
+
+thumbnails.forEach(thumbnail => {
+  thumbnail.addEventListener('click', function() {
+    thumbnails.forEach(t => t.classList.remove('selected'));
+    this.classList.add('selected');
+    selectedBgUrl = this.getAttribute('data-bg-url');
+    document.body.style.backgroundImage = selectedBgUrl ? `url(${selectedBgUrl})` : '';
+  });
+});
+
+// Handle file upload
+document.getElementById('bg-upload').onchange = function(event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      selectedBgUrl = e.target.result;
+      document.body.style.backgroundImage = `url(${selectedBgUrl})`;
+
+      // Add the uploaded image as a new thumbnail
+      const newThumbnail = document.createElement('div');
+      newThumbnail.className = 'bg-thumbnail';
+      newThumbnail.setAttribute('data-bg-url', selectedBgUrl);
+
+      const newPreview = document.createElement('div');
+      newPreview.className = 'bg-preview';
+      newPreview.style.backgroundImage = `url(${selectedBgUrl})`;
+
+      newThumbnail.appendChild(newPreview);
+      document.getElementById('bg-options').insertBefore(newThumbnail, document.getElementById('upload-bg'));
+
+      // Add click event to the new thumbnail
+      newThumbnail.addEventListener('click', function() {
+        thumbnails.forEach(t => t.classList.remove('selected'));
+        newThumbnail.classList.add('selected');
+        selectedBgUrl = newThumbnail.getAttribute('data-bg-url');
+        document.body.style.backgroundImage = `url(${selectedBgUrl})`;
+      });
+    };
+    reader.readAsDataURL(file);
+  }
+};
+
+// Save background selection
+document.getElementById('save-bg').onclick = function() {
+  if (selectedBgUrl) {
+    localStorage.setItem('backgroundImage', selectedBgUrl);
+    document.getElementById('bg-modal').style.display = 'none';
+  }
+};
+
+// Load saved background on page load
+window.onload = function() {
+  const savedBg = localStorage.getItem('backgroundImage');
+  if (savedBg) {
+    document.body.style.backgroundImage = `url(${savedBg})`;
+  }
+};
+</script>
+<!-- Custom Hex Button -->
+<!-- Button to open the modal -->
+<button id="openModal" class="custom-link-color-button">CT</button>
+<!-- Reload Button -->
+<button id="disqus-reload-button" class="reload-button">
+    R
+</button>
+<style>
+.reload-button {
+    background-color: rgba(183,202,233,0.5);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 80px;
+    left: 10px;
+    z-index: 50;
+    border-radius: 12px;
+    box-shadow: 0 0 5px white;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.reload-button:hover {
+    background-color: rgba(15,81,183,0.5); /* Slightly darker shade of the original */
+    transform: scale(1.001); /* Slightly enlarges the button */
+    box-shadow: 0 0 15px white;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const reloadButton = document.getElementById('disqus-reload-button');
+
+    reloadButton.addEventListener('click', function() {
+        if (window.DISQUS && typeof window.DISQUS.reset === 'function') {
+            window.DISQUS.reset({
+                reload: true,
+                config: function () {
+                    // Use the exact URL as both the page URL and identifier to link to the existing thread
+                    this.page.url = 'https://citadelchatroom.blogspot.com/2024/10/main-chat-2.html';
+                    this.page.identifier = 'https://citadelchatroom.blogspot.com/2024/10/main-chat-2.html';
+                }
+            });
+        }
+    });
+});
+</script>
+<!-- Disclaimer -->
+<div class="blinking-text">⚠ ATTENTION PLEASE ⚠</div>
+<style>
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+
+    .blinking-text {
+        font-size: 24px;
+        font-weight: bold;
+        color: yellow;
+        animation: blink 1s infinite;
+      	text-align: center;
+	text-shadow: 0 0 5px #000;
+    }
+</style>
+<br />
+<!-- News Ticker -->
+  <div class='custom-news-ticker-container'>
+    <div class='custom-news-ticker'>
+      <marquee behavior='scroll' direction='left' scrollamount='5'>
+        <span class='custom-ticker-text'>We kindly request that all users adhere strictly to the rules. Any discussion related to other chatrooms that could lead to conflicting opinions or disrupt the peace of the main chat will result in a ban. Additionally, any violation of other rules will be handled in the same manner. If you wish to appeal a ban, please visit the <a href="https://ctdbanunbanrequest.blogspot.com/2024/09/submit-ban-or-unban-request-here.html">CTD Ban-Unban Request Platform</a>. Discussing someone else’s ban will also lead to a ban for the individual involved. In short, initiating unnecessary or disruptive conversations in the main chat will result in a ban. The main chat is intended for general discussion. Criticisms are not allowed here; if you have an issue, please reach out to the Owner directly through the Discord server instead of bringing it to the main chat. We aim to maintain a respectful and comfortable environment. Thank you.</span>
+      </marquee>
+    </div>
+  </div>
+  <style>
+    .custom-news-ticker {
+      width: 100%;
+      padding: 5px 0;
+      box-sizing: border-box;
+    }
+
+    .custom-ticker-text {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+  <hr />
+  <br />
+<div style="font-size:2em; font-weight:bold; text-align:center; text-shadow:0 0 10px white;">Weekly Mini Games Leaderboard</div>
+<div class="marquee-container">
+    <div class="marquee">
+        
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://uploads.disquscdn.com/images/56c97ab6a43f1a1efe7e650b904e10f1523a5f70721c6c6a6b7048baf3c33ef2.gif" alt="Masked Image 1" class="masked-img" />
+            </div>
+            <div class="caption">
+                1<sup style="color:yellow;">st</sup> — Touya<br>Points: 148<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/26/97/f1/2697f174a875ef29e3528baab23d0819.gif" alt="Masked Image 5" class="masked-img" />
+            </div>
+            <div class="caption">
+                2<sup style="color:yellow;">nd</sup> — Most Evil<br>Points: 105<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/a4/61/ae/a461ae39adf7765d58b73355bb77d23f.gif" alt="Masked Image 2" class="masked-img" />
+            </div>
+            <div class="caption">
+                3<sup style="color:yellow;">rd</sup> — Cute Birdy<br>Points: 74<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://uploads.disquscdn.com/images/5cad9d6360e9e980835e59b8d094e4c3d8f034992b594c1992311b29a92be118.gif" alt="Masked Image 13" class="masked-img" />
+            </div>
+            <div class="caption">
+                4<sup style="color:skyblue;">th</sup> — Rashik<br>Points: 73<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/44/eb/17/44eb17afabc36a2df89e9bed6494587b.gif" alt="Masked Image 3" class="masked-img" />
+            </div>
+            <div class="caption">
+                5<sup style="color:skyblue;">th</sup> — Doughslice<br>Points: 71<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/93/a7/77/93a777af216ae409b7d0464d21b14c07.gif" alt="Masked Image 4" class="masked-img" />
+            </div>
+            <div class="caption">
+                6<sup style="color:skyblue;">th</sup> — Nanania<br>Points: 63<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://uploads.disquscdn.com/images/95263e9cc3be41993bfffe662f3564e5740075241add2ec2cd73d8030a5950d4.gif" alt="Masked Image 6" class="masked-img" />
+            </div>
+            <div class="caption">
+                7<sup style="color:skyblue;">th</sup> — Shini Tai<br>Points: 61<br />
+            </div>
+        </div>
+      
+		<div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/1e/28/50/1e28507cdc5bfc16e9b2c575501216b4.gif" alt="Masked Image 15" class="masked-img" />
+            </div>
+            <div class="caption">
+                8<sup style="color:skyblue;">th</sup> — Rix<br>Points: 50<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://uploads.disquscdn.com/images/77a93de8b97594a41b92e7e1a23f2dc1aff780b558620904522290a8e50356fc.gif" alt="Masked Image 11" class="masked-img" />
+            </div>
+            <div class="caption">
+                9<sup style="color:skyblue;">th</sup> — Adi<br>Points: 34<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/90/3d/df/903ddfdacc770e76d5728b51ec247996.gif" alt="Masked Image 11" class="masked-img" />
+            </div>
+            <div class="caption">
+                9<sup style="color:skyblue;">th</sup>(tied) — Nim<br>Points: 34<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/4e/08/b9/4e08b9ad5de04f38865295751674da6e.gif" alt="Masked Image 9" class="masked-img" />
+            </div>
+            <div class="caption">
+                10<sup style="color:skyblue;">th</sup> — Helena<br>Points: 31<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/f7/04/eb/f704ebce8267ced905bb816bbade9b0b.gif" alt="Masked Image 9" class="masked-img" />
+            </div>
+            <div class="caption">
+                11<sup style="color:skyblue;">th</sup> — Ultra Vegito<br>Points: 29<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://uploads.disquscdn.com/images/22f66e905c4c79338b7838b49ba809b1078fcbd6bb6abaf5dfcec02aa4f9082e.gif" alt="Masked Image 14" class="masked-img" />
+            </div>
+            <div class="caption">
+                12<sup style="color:skyblue;">th</sup> — Aneemay<br>Points: 26<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/2a/af/0a/2aaf0ac4482f0bd8f115c1932416c019.gif" alt="Masked Image 7" class="masked-img" />
+            </div>
+            <div class="caption">
+                13<sup style="color:skyblue;">th</sup> — 2B<br>Points: 23<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/a0/07/8b/a0078b401e72994d052af23c7f795f6b.gif" alt="Masked Image 7" class="masked-img" />
+            </div>
+            <div class="caption">
+                14<sup style="color:skyblue;">th</sup> — Worth Nothing<br>Points: 21<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://uploads.disquscdn.com/images/c2109fd7e69927edb80bef9b92d959d9b25532279c5e60fb8c634f3fec613e77.gif" alt="Masked Image 8" class="masked-img" />
+            </div>
+            <div class="caption">
+                15<sup style="color:skyblue;">th</sup> — Nyx<br>Points: 11<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/1c/62/8e/1c628ea8d0308160fce4116f120d12a9.gif" alt="Masked Image 8" class="masked-img" />
+            </div>
+            <div class="caption">
+                16<sup style="color:skyblue;">th</sup> — Madlitt12<br>Points: 7<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/c1/1b/fe/c11bfe61c6b0bc1db8f316851295ecdc.gif" alt="Masked Image 8" class="masked-img" />
+            </div>
+            <div class="caption">
+                16<sup style="color:skyblue;">th</sup>(tied) — PenguLover<br>Points: 7<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/04/4f/7e/044f7e5f6e82fa8a81aa4df32a8bc932.gif" alt="Masked Image 8" class="masked-img" />
+            </div>
+            <div class="caption">
+                17<sup style="color:skyblue;">th</sup> — Flames<br>Points: 6<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://uploads.disquscdn.com/images/fcca6b797845cc96765f714075bf7ebbfc4cb0e5ffda2d7d2598dfdfe273f7c1.gif" alt="Masked Image 10" class="masked-img" />
+            </div>
+            <div class="caption">
+                18<sup style="color:skyblue;">th</sup> — Ladyhead<br>Points: 4<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/eb/f8/f8/ebf8f8c22e8ee2caa2bb9b3c35a04aca.gif" alt="Masked Image 10" class="masked-img" />
+            </div>
+            <div class="caption">
+                19<sup style="color:skyblue;">th</sup> — Nameless<br>Points: 3<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/e4/f4/fb/e4f4fbaa6b3f28b1d72951bb83c0fda2.gif" alt="Masked Image 12" class="masked-img" />
+            </div>
+            <div class="caption">
+                20<sup style="color:skyblue;">th</sup> — GoT<br>Points: 2<br />
+            </div>
+        </div>
+
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://uploads.disquscdn.com/images/9edfb130c40c367bb2e0b9a30620cabdbf717405cff5bee1f45841f7e1404c22.gif" alt="Masked Image 15" class="masked-img" />
+            </div>
+            <div class="caption">
+                21<sup style="color:skyblue;">st</sup> — Helldiver<br>Points: 1<br />
+            </div>
+        </div>
+      
+        <div class="mask-container">
+            <div class="glow-container">
+                <img src="https://i.pinimg.com/originals/a3/fc/85/a3fc856fe2d12728330cc8379e9fece5.gif" alt="Masked Image 15" class="masked-img" />
+            </div>
+            <div class="caption">
+                22<sup style="color:skyblue;">nd</sup> — Unknown Weeb<br>Points: 1<br />
+            </div>
+        </div>
+
+    </div>
+</div>
+<style>
+  .marquee-container {
+    width: 100%;
+    height: 300px; /* Adjust height if needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 150s linear infinite; /* Same animation for the entire row */
+    width: 100%;
+}
+
+.mask-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Adjust spacing between images */
+}
+
+.glow-container {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add glow effect around the mask */
+    box-shadow: 0 0 20px 5px skyblue;
+    border-radius: 50%; /* Match the circular mask shape */
+}
+
+.masked-img {
+    width: 100%;
+    height: 100%;
+    clip-path: circle(50% at 50% 50%); /* Apply the mask */
+    object-fit: cover;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    /* Add glow effect */
+    text-shadow: 0 0 10px skyblue, 0 0 20px skyblue;
+}
+
+/* Animation for the entire container (images + captions) */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-1250%);
+    }
+  }
+</style>
+<!-- About Mini Games Modal -->
+<style>
+  .center-container22 {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Button Style */
+  .open-modal-btn22 {
+    background-color: rgba(166,225,255,0.1);
+    box-shadow: 0 0 5px white;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-shadow: 0 0 5px white;
+  }
+
+  .open-modal-btn22:hover {
+    background-color: rgb(132,180,204,0.5);
+    transform: scale(1.001);
+    transition: transform 0.3s ease-in-out;
+  }
+
+ /* Modal Background */
+  .modal22 {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Modal Content */
+.modal-content22 {
+    position: fixed; /* Use fixed or absolute positioning */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    background-color: rgba(164,101,224,0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+  /* Close Button */
+  .close22 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .modal22.show22 .modal-content22 {
+    opacity: 1;
+  }
+</style>
+
+<!-- Button to open the modal -->
+<div class="center-container22">
+  <button class="open-modal-btn22">About Mini Games</button>
+</div>
+
+<!-- Modal Structure -->
+<div class="modal22" id="miniGamesModal22">
+  <div class="modal-content22">
+    <span class="close22" id="closeModal22">&times;</span>
+    <h1 style="color:yellow; text-align:center; font-weight:bold;">Mini Games</h1>
+    <p style="text-align:center;"> The mini games are a popular attraction of our chatroom. It consists of the following games: </p>
+    <ul style="text-align:left;">
+      <li>
+        <b style="color:yellow; font-size: 18px;">Finding Easter eggs in the chatroom:</b>
+        <br>Find anomalies or unusualities within the chatroom. Some are hidden, some go unnoticed. Find them and earn <b>10 points</b> for each find! </br>
+      </li>
+      <br />
+      <li>
+        <b style="color:yellow; font-size: 18px;">Chess:</b>
+        <br>Play chess with fellow chatters or any member of the admin dept. Earn <b>10 points</b> for each round! Send screenshots of your win to any admin and mods for registering your points. </br>
+      </li>
+      <br />
+      <li>
+        <b style="color: yellow; font-size: 18px;">Rock, Papers, Scissors:</b>
+        <br>Play a round with anyone here at <a href="https://www.rpsgame.org/">RPS game</a>. Share the link and play with them while chatting for communication. Each win against the player will earn you <b>0.5 points</b>! Send screenshots to the mods or admins for verification of your win. </br>
+      </li>
+      <br />
+      <li>
+        <b style="color:yellow; font-size: 18px;">Quizzes, Riddles, IQ related questions and answers:</b>
+        <br>This game will be hosted by admins and mods only. They'll ask you questions, or give you riddles to solve or do an IQ test. Answer them, win, and earn <b>1 point</b> for each of them. </br>
+      </li>
+    </ul>
+    <p style="text-align:center;">
+      <i>More games will be added in the future. If you have any suggestions, then <a href="mailto:rashikanjum7770@gmail.com">mail the founder.</a>
+      </i>
+    </p>
+    <h3 style="color:yellow; font-weight:bold; text-align:center;">Rewards:</h3>
+    <p style="text-align:center;"> If you reach <b>500 points</b>, you'll be given Discord Nitro for one month (not basic) or you can choose profile decorations instead (which is a permanent purchase). </p>
+    <p style="text-align:center;">
+      <b style="color:yellow; font-size:18px;">The leaderboard will be updated weekly. It'll be reset once someone reaches 500 points. Good luck.</b>
+    </p>
+  </div>
+</div>
+
+<script>
+  // Open Modal
+  document.querySelector('.open-modal-btn22').addEventListener('click', function() {
+    const modal22 = document.getElementById('miniGamesModal22');
+    modal22.style.display = 'block';
+    setTimeout(() => {
+      modal22.classList.add('show22');
+    }, 10);
+  });
+
+  // Close Modal
+  document.getElementById('closeModal22').addEventListener('click', function() {
+    const modal22 = document.getElementById('miniGamesModal22');
+    modal22.classList.remove('show22');
+    setTimeout(() => {
+      modal22.style.display = 'none';
+    }, 1000);
+  });
+</script>
